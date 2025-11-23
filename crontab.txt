@@ -1,0 +1,5 @@
+# 早晨健身票6:00-7:30预约 (UTC 23:32，北京时间次日7:32) - 每天抢第二天早上的票
+32 23 * * * cd /home/devbox/project && /usr/bin/python3 gym_reserve.py morning >> morning_cron.log 2>&1
+
+# 晚间健身票19:30-21:30预约 (UTC 13:32，北京时间当日21:32) - 每天抢第二天晚上的票  
+32 13 * * * cd /home/devbox/project && /usr/bin/python3 gym_reserve.py evening >> evening_cron.log 2>&1
